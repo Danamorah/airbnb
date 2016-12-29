@@ -38,4 +38,8 @@ gulp.task('fonts', function(){
 		.pipe(gulp.dest('dist/fonts'));
 });
 
+gulp.task('watch', function(){
+	gulp.watch('src/sass/**/*.scss', ['style']);
+})
+
 gulp.task('default', ['script', 'style', 'fonts']);
