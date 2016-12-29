@@ -1,0 +1,16 @@
+.opaco{
+	background-color: rgba(0, 0, 0, .5);
+}
+.negro{
+	font-weight: bold;
+}
+.carousel-item{
+	color: black;
+}
+.carousel{
+	text-align: center;
+}
+.boton-paulina{
+	@include boton(transparent, 5px, 1px solid white);	
+}
+

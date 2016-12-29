@@ -1,0 +1,6 @@
+@mixin boton ($bi, $br, $bs) {
+	background-color: $bi;
+	border-radius: $br;
+	border: $bs;
+}
+
