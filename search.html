@@ -31,11 +31,128 @@
   </header>
   <!-- FIN NAVBAR ABRIL -->
   <div class="row">
-    <div class="col s12 m8 l8 scroll"><!--INICIO DIV DE FILTROS Y FOTOS-->
-      <div><!--INICIO YENNY-->
+   <div class="col s12 m8 l8 scroll"><!--INICIO DIV DE FILTROS Y FOTOS-->
+      <!--INICIO YENNY-->
+            <div id="filter">
+              <div class="row"><!--primer row filter-->
+                <div class="container">
+                    <div class="col s12 col m3">
+                        <p>Fechas</p>
+                    </div>
+                    <div class="col s12 col m3">
+                        <input type="date" class="datepicker">
+                    </div>
+                    <div class="col s12 col m3">
+                        <input type="date" class="datepicker">
+                    </div>
+                    <div class="col s12 col m3">
+                       <div class="input-field ">
+                        <select>
+                          <option value="" disabled selected>Huéspedes</option>
+                          <option value="1">1 Huésped</option>
+                          <option value="2">2 Huéspedes</option>
+                          <option value="3">3 Huéspedes</option>
+                          <option value="3">4 Huéspedes</option>
+                          <option value="3">5 Huéspedes</option>
+                          <option value="3">6 Huéspedes</option>
+                        </select>
+                      </div>
+                    </div>
+                </div>
+              </div><!--primer row filter-->
 
-      </div><!--FIN YENNY-->
-
+              <div class="row"><!--segundo row filter-->
+                  <div class="container">
+                      <div class="col s12 col m3">
+                          <p>Tipo de habitación <i class="material-icons tooltip">help</i>
+                          <div class="tooltiptext">    
+                                <p><strong>Casa entera</strong></p>
+                                <p>Anuncios en los que tienes todo el lugar para ti.</p>
+                                <p><strong>Habitación privada</strong></p>
+                                <p>Anuncios en los que tienes tu propia habitación pero compartes espacios comunes</p>
+                                <p><strong>Habitación compartida</strong></p>
+                                <p>Anuncios en los cuales compartes la habitación</p> 
+                          </div>
+                      </div>
+                      <div class="col s12 col m3">
+                        <div class="row filter-uno">
+                          <div class="col s12 col m1">
+                            <i class="material-icons">home</i>
+                          </div>
+                          <div class="col s12 col m8">
+                            <p>Casa entera</p>
+                          </div>
+                          <div class="col s12 col m1">
+                            <input type="checkbox" id="test1" />
+                            <label for="test1"></label>
+                          </div>
+                        </div>
+                      </div><!--casa entera-->
+                      <div class="col s12 col m3">
+                        <div class="row filter-uno">
+                          <div class="col s12 col m1">
+                            <i class="material-icons">https</i>
+                          </div>
+                          <div class="col s12 col m8">
+                            <p>Habitación privada</p>
+                          </div>
+                          <div class="col s12 col m1">
+                            <input type="checkbox" id="test2" />
+                            <label for="test2"></label>
+                          </div>
+                        </div>
+                      </div><!--habitación privada-->
+                      <div class="col s12 col m3">
+                        <div class="row filter-uno">
+                          <div class="col s12 col m1">
+                            <i class="material-icons">weekend</i>
+                          </div>
+                          <div class="col s12 col m8">
+                            <p>Habitación compartida</p>
+                          </div>
+                          <div class="col s12 col m1">
+                            <input type="checkbox" id="test3" />
+                            <label for="test3"></label>
+                          </div>
+                        </div>
+                      </div><!--habitacion compartida--> 
+              </div><!--segundo row filter-->
+              <div class="row"><!--tercer row filter-->
+                <div class="container">
+                    <div class="col s12 col m3">
+                        <p>Rango de precios</p>
+                    </div>
+                    <div class="col s12 col m9">
+                        <div class="flat-slider" id="flat-slider"></div>
+                    </div>
+                </div>
+              </div><!--tercer row filter-->
+             <div class="row filter-cuatro"><!--cuarto row filter-->
+                <div class="container">
+                    <div class="col s12 col m3">
+                        <p>Reserva inmediata<i class="material-icons">flash_on</i></p>
+                    </div>
+                    <div class="col s12 col m6">
+                        <p>Anuncios que no requieren que el anfitrión acepte la solicitud.</p>
+                    </div>
+                    <div class="col s12 col m3">
+                          <div class="switch">
+                            <label>
+                              Off
+                              <input type="checkbox">
+                              <span class="lever"></span>
+                              On
+                            </label>
+                          </div>
+                    </div>
+                </div>
+              </div><!--cuarto row filter-->
+              <div class="container">
+                  <div class="divider"></div>
+              </div>
+          </div><!--filter>
+      <!--FIN YENNY-->
+  
       <div class="container"><!--INICIO MARCIA-->
         <div class="row" id="filtros">
           <div class="col s12 m3 l3">
@@ -777,6 +894,7 @@
        </div>
     </div> 
     <!--FIN DIV DE MAPA JESSICA-->  
+  </div>
   </div>
 
 
