@@ -17,7 +17,4 @@ C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/bin/sass:13:in `<top (require
 C:/Ruby23-x64/bin/sass:22:in `load'
 C:/Ruby23-x64/bin/sass:22:in `<main>'
 */
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Errno::ENOENT: No such file or directory @ rb_sysopen - sass/main.scss"; }
+
