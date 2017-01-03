@@ -1,0 +1,39 @@
+nav {
+	background-color: $transparente;
+	box-shadow: none;
+	ul a {
+		color: $color-link;
+	}
+	ul a:hover {
+		background-color: $transparente;
+	}
+}
+
+footer.page-footer {
+	background-color: $blancos;
+}
+
+select {
+	width: 67%;
+}
+
+h5 {
+	color: $gris-oscuro;
+	font-size: $size-titulo;
+	font-weight: bold;
+}
+
+a {
+	color: $gris;
+	font-size: $size-links;
+	a:hover {
+		text-decoration: $link;
+	}
+}
+
+
+.copyright {
+	color: $gris-oscuro;
+	padding: 10px;
+}
+
