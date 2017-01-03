@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
   <title>Airbnb</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -10,20 +10,715 @@
   <!--REQUIRED STYLE SHEETS-->
   <link rel="stylesheet" type="text/css" href="dist/css/style.min.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
-  </head>
-  <body>
-  	<!--DIV DE MAP-->
+</head>
+<body>
+  <div class="row">
+    <div class="col s12 m8 l8"><!--INICIO DIV DE FILTROS Y FOTOS-->
+      <div><!--INICIO YENNY-->
 
-  		<div class="col m4" id="map"></div>
+      </div><!--FIN YENNY-->
 
-    <!-- CORE JQUERY  -->
-  	<script src="node_modules/jquery/dist/jquery.min.js"></script>
-  	<!-- MATERIALIZE CORE SCRIPT   -->
-  	<script src="node_modules/materialize-css/dist/js/materialize.min.js"></script>  
- 	<!-- CUSTOM SCRIPTS -->
-  	<script type="text/javascript" src="dist/js/script.min.js"></script>
-  	<!--Script de Maps-->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0WqSDhrSn4OuIfmnC5EAdQ78DgV-g2xc&callback=initMap" async defer></script>
-    <script type="text/javascript" src="dist/js/search.js"></script>
-  </body>
+      <div class="container"><!--INICIO MARCIA-->
+        <div class="row" id="filtros">
+          <div class="col s12 m3 l3">
+            <a class="waves-effect waves-light btn btn-filtros">Filtros</a>
+          </div>
+          <div class="col s12 m8 l8">
+            <h6>Solo hay un 14% de alojamiento disponibles para estas fechas.</h6>
+            <p>Te recomendamos que reserves un alojamiento lo antes posible.</p>
+          </div>
+          <div class="col s1 m1 l1">
+            <img src="img/logo.png" alt="" class="hide-on-small-only">
+          </div>
+        </div>
+        <div class="divider"></div> 
+
+        <div id="filtro-anvanced">
+          <div class="row">
+            <div class="col s12 m3 l3">
+              <p>Tamaño</p>
+            </div>
+            <div class="col s12 m3 l3">
+              <select class="browser-default seleccion-tamano">
+                <option value="" disabled selected>Habitación</option>
+                <option value="1">1 Dormitorio</option>
+                <option value="2">2 Dormitorios</option>
+                <option value="3">3 Dormitorios</option>
+                <option value="1">4 Dormitorios</option>
+                <option value="2">5 Dormitorios</option>
+                <option value="3">6 Dormitorios</option>
+              </select>
+              <label></label>
+            </div>
+            <div class=" col s12 m3 l3">
+              <select class="browser-default seleccion-tamano">
+                <option value="" disabled selected>Baño</option>
+                <option value="1">1 Baño</option>
+                <option value="2">2 Baños</option>
+                <option value="3">3 Baños</option>
+              </select>
+              <label></label>
+            </div>
+            <div class="col s12 m3 l3">
+              <select class="browser-default seleccion-tamano">
+                <option value="" disabled selected>Cama</option>
+                <option value="1">1 Cama</option>
+                <option value="2">2 Camas</option>
+                <option value="3">3 Camas</option>
+                <option value="2">4 Camas</option>
+                <option value="3">5 Camas</option>
+                <option value="2">6 Camas</option>
+                <option value="3">7+ Camas</option>
+              </select>
+              <label></label>
+            </div>
+          </div>
+          <div class="divider"></div>
+
+          <div class="row row-avanced">
+            <div class="col s3 m3 l3">
+              <p>Opciones</p>
+            </div>
+            <div class="col s9 m9 l9">
+              <div class="row">
+                <div class="col s1 m1 l1">
+                  <form action="#">
+                    <p>
+                      <input type="checkbox" id="test1" />
+                      <label for="test1"></label>
+                    </p>
+                  </form>
+                </div>
+                <div class="col s10 m10 l10">
+                  <p>Superhost</p>
+                  <p>Quédate en casa de anfritiones excepcionales.</p>
+                  <a href="">Más información</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="divider"></div>
+
+          <div class="row row-avanced">
+            <ul class="collapsible seleccion-servicios" data-collapsible="accordion">
+              <li>
+                <div class="col s12 m2 l2">
+                  <p>Servicios</p>
+                </div>
+                <div class="col s12 m3 l3">
+                  <div class="row row-avanced">
+                    <div class="col s1 m1 l1">
+                      <form action="#">
+                        <p>
+                          <input type="checkbox" id="test2" />
+                          <label for="test2"></label>
+                        </p>
+                      </form>
+                    </div>
+                    <div class="col s10 m10 l10">
+                    <p>Wifi</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col s12 m3 l3">
+                  <div class="row row-avanced">
+                    <div class="col s1 m1 l1">
+                      <form action="#">
+                        <p>
+                          <input type="checkbox" id="test3" />
+                          <label for="test3"></label>
+                        </p>
+                      </form>
+                    </div>
+                    <div class="col s10 m10 l10">
+                      <p>TV</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col s12 m3 l3">
+                  <div class="row row-avanced">
+                    <div class="col s1 m1 l1">
+                      <form action="#">
+                        <p>
+                          <input type="checkbox" id="test4" />
+                          <label for="test4"></label>
+                        </p>
+                      </form>
+                    </div>
+                    <div class="col s9 m9 l9">
+                      <p>Cocina</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="collapsible-header">+</div>
+                <div class="collapsible-body">
+                  <div class="row row-avanced">
+                    <div class="col offset-s1 hide-on-small-only""></div>
+                    <div class="col s12 m3 l3">
+                      <div class="row row-avanced">
+                        <div class="col s1 m1 l1">
+                          <form action="#">
+                            <p>
+                              <input type="checkbox" id="test5" />
+                              <label for="test5"></label>
+                            </p>
+                          </form>
+                        </div>
+                        <div class="col s10 m10 l10">
+                          <p>Acceso disponible las 24 hrs.</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col s12 m3 l3">
+                      <div class="row row-avanced">
+                        <div class="col s1 m1 l1">
+                          <form action="#">
+                            <p>
+                              <input type="checkbox" id="test6" />
+                              <label for="test6"></label>
+                            </p>
+                          </form>
+                        </div>
+                        <div class="col s10 m10 l10">
+                          <p>Aire Acondicionado</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col s12 m3 l3">
+                      <div class="row row-avanced">
+                        <div class="col s1 m1 l1">
+                          <form action="#">
+                            <p>
+                              <input type="checkbox" id="test7" />
+                              <label for="test7"></label>
+                            </p>
+                          </form>
+                        </div>
+                        <div class="col s9 m9 l9">
+                          <p>Apto para familia y niños</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row row-avanced">
+                    <div class="col offset-s1 hide-on-small-only""></div>
+                    <div class="col s12 m3 l3">
+                      <div class="row row-avanced">
+                        <div class="col s1 m1 l1">
+                          <form action="#">
+                            <p>
+                              <input type="checkbox" id="test8" />
+                              <label for="test8"></label>
+                            </p>
+                          </form>
+                        </div>
+                        <div class="col s10 m10 l10">
+                          <p>Calefacción</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col s12 m3 l3">
+                      <div class="row row-avanced">
+                        <div class="col s1 m1 l1">
+                          <form action="#">
+                            <p>
+                              <input type="checkbox" id="test9" />
+                              <label for="test9"></label>
+                            </p>
+                          </form>
+                        </div>
+                        <div class="col s10 m10 l10">
+                          <p>Champú</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col s12 m3 l3">
+                      <div class="row row-avanced">
+                        <div class="col s1 m1 l1">
+                          <form action="#">
+                            <p>
+                              <input type="checkbox" id="test10" />
+                              <label for="test10"></label>
+                            </p>
+                          </form>
+                        </div>
+                        <div class="col s9 m9 l9">
+                          <p>Chimenea interior</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col offset-s1 hide-on-small-only""></div>
+                    <div class="col s12 m3 l3">
+                      <div class="row row-avanced">
+                        <div class="col s1 m1 l1">
+                          <form action="#">
+                            <p>
+                              <input type="checkbox" id="test11" />
+                              <label for="test11"></label>
+                            </p>
+                          </form>
+                        </div>
+                        <div class="col s10 m10 l10">
+                          <p>Desayuno</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col s12 m3 l3">
+                      <div class="row row-avanced">
+                        <div class="col s1 m1 l1">
+                          <form action="#">
+                            <p>
+                              <input type="checkbox" id="test12" />
+                              <label for="test12"></label>
+                            </p>
+                          </form>
+                        </div>
+                        <div class="col s10 m10 l10">
+                          <p>Internet</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col s12 m3 l3">
+                      <div class="row row-avanced">
+                        <div class="col s1 m1 l1">
+                          <form action="#">
+                            <p>
+                              <input type="checkbox" id="test13" />
+                              <label for="test13"></label>
+                            </p>
+                          </form>
+                        </div>
+                        <div class="col s9 m9 l9">
+                          <p>Lavadora</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--<div class="divider"></div>-->
+
+          <div class="row row-avanced">
+            <ul class="collapsible seleccion-servicios" data-collapsible="accordion">
+              <li>
+                <div class="col s12 m2 l2">
+                  <p>Servicios</p>
+                </div>
+                <div class="col s12 m3 l3">
+                  <div class="row row-avanced">
+                    <div class="col s1 m1 l1">
+                      <form action="#">
+                        <p>
+                          <input type="checkbox" id="test14" />
+                          <label for="test14"></label>
+                        </p>
+                      </form>
+                    </div>
+                    <div class="col s10 m10 l10">
+                      <p>Con ascendor</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col s12 m3 l3">
+                  <div class="row row-avanced">
+                    <div class="col s1 m1 l1">
+                      <form action="#">
+                        <p>
+                          <input type="checkbox" id="test15" />
+                          <label for="test15"></label>
+                        </p>
+                      </form>
+                    </div>
+                    <div class="col s10 m10 l10">
+                      <p>Parking gratuito</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col s12 m3 l3">
+                  <div class="row row-avanced">
+                    <div class="col s1 m1 l1">
+                      <form action="#">
+                        <p>
+                          <input type="checkbox" id="test16" />
+                          <label for="test16"></label>
+                        </p>
+                      </form>
+                    </div>
+                    <div class="col s9 m9 l9">
+                      <p>Pisina</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="collapsible-header">+</div>
+                <div class="collapsible-body">
+                  <div class="row row-avanced">
+                    <div class="col offset-s1 hide-on-small-only""></div>
+                    <div class="col s12 m3 l3">
+                      <div class="row">
+                        <div class="col s1 m1 l1">
+                          <form action="#">
+                            <p>
+                              <input type="checkbox" id="test17" />
+                              <label for="test17"></label>
+                            </p>
+                          </form>
+                        </div>
+                        <div class="col s10 m10 l10">
+                          <p>Acceso discapacitados</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col s12 m3 l3">
+                      <div class="row row-avanced">
+                        <div class="col s1 m1 l1">
+                          <form action="#">
+                            <p>
+                              <input type="checkbox" id="test18" />
+                              <label for="test18"></label>
+                            </p>
+                          </form>
+                        </div>
+                        <div class="col s10 m10 l10">
+                          <p>Aparcamiento gratuito en la calle</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col s12 m3 l3">
+                      <div class="row row-avanced">
+                        <div class="col s1 m1 l1">
+                          <form action="#">
+                            <p>
+                              <input type="checkbox" id="test19" />
+                              <label for="test19"></label>
+                            </p>
+                          </form>
+                        </div>
+                        <div class="col s9 m9 l9">
+                          <p>Jacuzzi</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </li>
+            </ul>
+          </div>
+          <!--<div class="divider"></div>-->
+
+          <div class="row row-avanced">
+            <div class="col s12 m2 l2">
+              <p>Normas de la casa</p>
+            </div>
+            <div class="col s12 m3 l3">
+              <div class="row row-avanced">
+                <div class="col s1 m1 l1">
+                  <form action="#">
+                    <p>
+                      <input type="checkbox" id="test20" />
+                      <label for="test20"></label>
+                    </p>
+                  </form>
+                </div>
+                <div class="col s10 m10 l10">
+                  <p>Admite Mascotas</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col s12 m3 l3">
+              <div class="row row-avanced">
+                <div class="col s1 m1 l1">
+                  <form action="#">
+                    <p>
+                      <input type="checkbox" id="test21" />
+                      <label for="test21"></label>
+                    </p>
+                  </form>
+                </div>
+                <div class="col s10 m10 l10">
+                  <p>Apto para eventos</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col s12 m4 l4">
+              <div class="row row-avanced">
+                <div class="col s1 m1 l1">
+                  <form action="#">
+                    <p>
+                      <input type="checkbox" id="test22" />
+                      <label for="test22"></label>
+                    </p>
+                  </form>
+                </div>
+                <div class="col s9 m9 l9">
+                  <p>Apto para fumadores</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="divider"></div>
+
+          <div class="row">
+            <ul class="collapsible seleccion-servicios" data-collapsible="accordion">
+              <li>
+                <div class="col s12 m2 l2">
+                  <p>Vecindario</p>
+                </div>
+                <div class="col s12 m3 l3">
+                  <div class="row row-avanced">
+                    <div class="col s1 m1 l1">
+                      <form action="#">
+                        <p>
+                          <input type="checkbox" id="test23" />
+                          <label for="test23"></label>
+                        </p>
+                      </form>
+                    </div>
+                    <div class="col s10 m10 l10">
+                      <p>SoMa</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col s12 m3 l3">
+                  <div class="row row-avanced">
+                    <div class="col s1 m1 l1">
+                      <form action="#">
+                        <p>
+                          <input type="checkbox" id="test24" />
+                          <label for="test24"></label>
+                        </p>
+                      </form>
+                    </div>
+                    <div class="col s10 m10 l10">
+                      <p>Mission District</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col s12 m3 l3">
+                  <div class="row row-avanced">
+                    <div class="col s1 m1 l1">
+                      <form action="#">
+                        <p>
+                          <input type="checkbox" id="test25" />
+                          <label for="test25"></label>
+                        </p>
+                      </form>
+                    </div>
+                    <div class="col s9 m9 l9">
+                      <p>Daly City</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="collapsible-header">+</div>
+                <div class="collapsible-body">
+                  <div class="row row-avanced">
+                    <div class="col offset-s1 hide-on-small-only""></div>
+                    <div class="col s12 m3 l3">
+                      <div class="row row-avanced">
+                        <div class="col s1 m1 l1">
+                          <form action="#">
+                            <p>
+                              <input type="checkbox" id="test26" />
+                              <label for="test26"></label>
+                            </p>
+                          </form>
+                        </div>
+                        <div class="col s10 m10 l10">
+                          <p>Alfama</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col s12 m3 l3">
+                      <div class="row row-avanced">
+                        <div class="col s1 m1 l1">
+                          <form action="#">
+                            <p>
+                              <input type="checkbox" id="test27" />
+                              <label for="test27"></label>
+                            </p>
+                          </form>
+                        </div>
+                        <div class="col s10 m10 l10">
+                          <p>Buda</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col s12 m3 l3">
+                      <div class="row row-avanced">
+                        <div class="col s1 m1 l1">
+                          <form action="#">
+                            <p>
+                              <input type="checkbox" id="test28" />
+                              <label for="test28"></label>
+                            </p>
+                          </form>
+                        </div>
+                        <div class="col s9 m9 l9">
+                          <p>Area central</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row row-avanced">
+                    <div class="col offset-s1 hide-on-small-only""></div>
+                    <div class="col s12 m3 l3">
+                      <div class="row row-avanced">
+                        <div class="col s1 m1 l1">
+                          <form action="#">
+                            <p>
+                              <input type="checkbox" id="test29" />
+                              <label for="test29"></label>
+                            </p>
+                          </form>
+                        </div>
+                        <div class="col s10 m10 l10">
+                          <p>Centro Historico</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col s12 m3 l3">
+                      <div class="row row-avanced">
+                        <div class="col s1 m1 l1">
+                          <form action="#">
+                            <p>
+                              <input type="checkbox" id="test30" />
+                              <label for="test30"></label>
+                            </p>
+                          </form>
+                        </div>
+                        <div class="col s10 m10 l10">
+                          <p>Barra</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col s12 m3 l3">
+                      <div class="row row-avanced">
+                        <div class="col s1 m1 l1">
+                          <form action="#">
+                            <p>
+                              <input type="checkbox" id="test31" />
+                              <label for="test31"></label>
+                            </p>
+                          </form>
+                        </div>
+                        <div class="col s9 m9 l9">
+                          <p>Barrio Alto</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row row-avanced">
+                    <div class="col offset-s1 hide-on-small-only""></div>
+                    <div class="col s12 m3 l3">
+                      <div class="row row-avanced">
+                        <div class="col s1 m1 l1">
+                          <form action="#">
+                            <p>
+                              <input type="checkbox" id="test32" />
+                              <label for="test32"></label>
+                            </p>
+                          </form>
+                        </div>
+                        <div class="col s10 m10 l10">
+                          <p>Bondi</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col s12 m3 l3">
+                      <div class="row row-avanced">
+                        <div class="col s1 m1 l1">
+                          <form action="#">
+                            <p>
+                              <input type="checkbox" id="test33" />
+                              <label for="test33"></label>
+                            </p>
+                          </form>
+                        </div>
+                        <div class="col s10 m10 l10">
+                          <p>Casco Antiguo</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col s12 m3 l3">
+                      <div class="row row-avanced">
+                        <div class="col s1 m1 l1">
+                          <form action="#">
+                            <p>
+                              <input type="checkbox" id="test34" />
+                              <label for="test34"></label>
+                            </p>
+                          </form>
+                        </div>
+                        <div class="col s9 m9 l9">
+                          <p>Center City</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="row">
+            <div class="col offset-s5 hide-on-small-only">
+            </div>
+            <div class="col s6 m3 l3"><a class="waves-effect waves-light btn btn-cancelar">Cancelar</a></div>
+            <div class="col s6 m3 l3"><a class="waves-effect waves-light btn btn-aplicar">Aplicar filtros</a></div>
+          </div>
+        </div>
+      </div><!--FIN MARCIA-->
+
+      <div><!--MILENA-->
+
+      </div>
+    </div><!--INICIO DIV DE FILTROS Y FOTOS-->
+    <div class="col s12 m4 l4"><!--INICIO DIV DE MAP-->
+
+    </div><!--FIN DIV DE MAP-->   
+  </div>
+
+
+  <!-- CORE JQUERY  -->
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <!-- MATERIALIZE CORE SCRIPT   -->
+  <script src="node_modules/materialize-css/dist/js/materialize.min.js"></script>  
+  <!-- CUSTOM SCRIPTS -->
+  <script type="text/javascript" src="dist/js/script.min.js"></script>
+  <!--Script de Maps-->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0WqSDhrSn4OuIfmnC5EAdQ78DgV-g2xc&callback=initMap" async defer></script>
+  <script type="text/javascript" src="dist/js/search.js"></script>
+</body>
 </html>
