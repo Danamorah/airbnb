@@ -23,6 +23,7 @@ $(document).ready(function(){
 	});
 });
 /**fin js filtros avanzados*/
+<<<<<<< HEAD
 
 // JS YENNY
 // SELECT 
@@ -55,3 +56,23 @@ $('#flat-slider').slider({
 
 //FIN JS YENNY
 
+=======
+$(function() {
+  $('#pagination-short').materializePagination({
+      align: 'center',
+      lastPage:  4,
+      firstPage:  1,
+      useUrlParameter: false,
+  }); 
+  
+  $('#pagination-long').materializePagination({
+      align: 'center',
+      lastPage:  10,
+      firstPage:  1,
+      useUrlParameter: false,
+      onClickCallback: function(requestedPage){
+          console.log('Requested page from #pagination-long: '+ requestedPage);
+      }
+  }); 
+});
+>>>>>>> 599eaf38b2b616d23a5745b2d5a1a4fa9d2371ca
