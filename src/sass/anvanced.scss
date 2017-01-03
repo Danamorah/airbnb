@@ -1,0 +1,26 @@
+#filtro-anvanced{
+	display:none;
+}
+
+.seleccion-tamano{
+	margin-top:$margin_seleccion;
+}
+
+.row-avanced{
+	margin-bottom:$margin_anvanced;
+}
+
+.seleccion-servicios{
+	box-shadow: none;
+    border:none;
+}
+
+.btn{
+	background-color:$color_principal;
+}
+
+.scroll{
+	width:150px;
+	height:560px;
+	overflow-y:scroll;
+}
