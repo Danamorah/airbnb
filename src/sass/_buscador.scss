@@ -1,0 +1,96 @@
+.SearchForm{
+	border: 1px solid #dce0e0;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 3px 0 #dce0e0;
+    -moz-box-shadow: 0 1px 3px 0 #dce0e0;
+    box-shadow: 0 1px 3px 0 #dce0e0;
+    margin-left: 0;
+    margin-right: 0;
+}
+.SearchForm .SearchForm__row {
+    display: table-row;
+    width: 100%;
+}
+.SearchForm form {
+    display: table;
+    width: 100%;
+}
+.SearchForm__inputs-wrapper {
+    position: relative;
+    display: table;
+    table-layout: fixed;
+    float: none;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+}
+.SearchForm__inputs-wrapper .SearchForm__guests, .SearchForm__inputs-wrapper .SearchForm__location, .SearchForm__inputs-wrapper .SearchForm__dates, .SearchForm__inputs-wrapper .SearchForm__submit {
+    padding: 15px 16px 8px;
+    display: table-cell;
+    float: none;
+}
+.SearchForm__inputs-wrapper .SearchForm__guests, .SearchForm__inputs-wrapper .SearchForm__location, .SearchForm__inputs-wrapper .SearchForm__dates, .SearchForm__inputs-wrapper .SearchForm__submit {
+    padding: 15px 16px 8px;
+    display: table-cell;
+    float: none;
+}
+.SearchForm__inputs-wrapper input, .SearchForm__inputs-wrapper select, .DateInput__display-text, .SearchForm__guests .guest-label__text {
+    font-size: 19px;
+    letter-spacing: -0.5px;
+    line-height: 22px;
+}
+.SearchForm__location, .DropDownWrapper .location-text {
+    width: 35%;
+}
+.SearchForm__inputs-wrapper .SearchForm__location input, .SearchForm__inputs-wrapper .SearchForm__location select, .SearchForm__inputs-wrapper .SearchForm__dates input, .SearchForm__inputs-wrapper .SearchForm__dates select, .SearchForm__inputs-wrapper .SearchForm__guests input, .SearchForm__inputs-wrapper .SearchForm__guests select {
+    border-right: 0;
+    -webkit-border-top-right-radius: 0;
+    -moz-border-radius-topright: 0;
+    border-top-right-radius: 0;
+    -webkit-border-bottom-right-radius: 0;
+    -moz-border-radius-bottomright: 0;
+    border-bottom-right-radius: 0;
+}
+.SearchForm__inputs-wrapper .SearchForm__dates, .SearchForm__inputs-wrapper .SearchForm__guests {
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-left-color: #dce0e0;
+}
+.SearchForm__inputs-wrapper .SearchForm__label {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: 15px;
+    letter-spacing: -0.5px;
+    white-space: nowrap;
+}
+.DateRangePicker {
+    width: 100%;
+    text-align: left;
+    position: relative;
+    display: inline-block;
+}
+.DateRangePickerInput__arrow svg{
+    vertical-align: middle;
+    fill: #484848;
+    height: 24px;
+    width: 24px;
+}
+.DateRangePickerInput__clear-dates svg{
+    fill: #82888a;
+    height: 12px;
+    width: 15px;
+    vertical-align: middle;
+    margin-bottom: 4px;
+}
+.DateInput__label {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}

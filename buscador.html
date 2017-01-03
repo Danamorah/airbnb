@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <!--[if IE]>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <![endif]-->
+  <title>Airbnb</title>
+  <link rel="stylesheet" type="text/css" href="node_modules/materialize-css/dist/css/materialize.min.css">
+  <!--REQUIRED STYLE SHEETS-->
+  <link rel="stylesheet" type="text/css" href="dist/css/style.min.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+<!--
+    <div class="container">
+          <div class="col-sm-12">
+          <div class="SearchForm row">
+              <form action="">
+                <div class="SearchForm__inputs-wrapper col-md-12">
+                  <div class="SearchForm__row row">
+                    <div class="SearchForm__location"><label for="search-location" class="SearchForm__label"><span>Dónde</span></label><div><div><input class="LocationInput input-large" name="location" type="text" placeholder="Destino, ciudad, dirección" autocomplete="off" id="search-location" value=""></div><div class="DropDownWrapper col-md-12"></div></div></div>
+
+    <div class="SearchForm__dates text-left"><label for="startDate" class="SearchForm__label"><span >Cuándo</span></label><div class="DateRangePicker"><div class="DateRangePickerInput"><div class="DateInput"><label class="DateInput__label" for="startDate">Llegada</label><input class="DateInput__input" type="text" id="startDate" name="startDate" value="" placeholder="Llegada" autocomplete="off" maxlength="10"><div class="DateInput__display-text">Llegada</div></div><div class="DateRangePickerInput__arrow"><svg viewBox="0 0 1000 1000"><path d="M694.4 242.4l249.1 249.1c11 11 11 21 0 32L694.4 772.7c-5 5-10 7-16 7s-11-2-16-7c-11-11-11-21 0-32l210.1-210.1H67.1c-13 0-23-10-23-23s10-23 23-23h805.4L662.4 274.5c-21-21.1 11-53.1 32-32.1z"></path></svg></div><div class="DateInput"><label class="DateInput__label" for="endDate" >Salida</label><input class="DateInput__input" type="text" id="endDate" name="endDate" value="" placeholder="Salida" autocomplete="off" maxlength="10"><div class="DateInput__display-text">Salida</div></div><button type="button" class="DateRangePickerInput__clear-dates DateRangePickerInput__clear-dates--hide"><span class="screen-reader-only"><span >Borrar fechas</span></span><svg viewBox="0 0 12 12" ><path d="M11.53.47a.75.75 0 0 0-1.061 0l-4.47 4.47L1.529.47A.75.75 0 1 0 .468 1.531l4.47 4.47-4.47 4.47a.75.75 0 1 0 1.061 1.061l4.47-4.47 4.47 4.47a.75.75 0 1 0 1.061-1.061l-4.47-4.47 4.47-4.47a.75.75 0 0 0 0-1.061z"></path></svg></button></div>
+
+   <div class="DayPickerNavigation DayPickerNavigation--horizontal"></div><div
+
+                <div class="SearchForm__guests text-left" data-reactid=".1yoyqzyxt6o.1.0.1.0.0.0.0.2"><label for="how-many-guests" class="SearchForm__label" data-reactid=".1yoyqzyxt6o.1.0.1.0.0.0.0.2.0"><span data-reactid=".1yoyqzyxt6o.1.0.1.0.0.0.0.2.0.0">Huéspedes</span></label><div class="GuestPickerTrigger" data-reactid=".1yoyqzyxt6o.1.0.1.0.0.0.0.2.1"><button class="GuestPickerTrigger__button" type="button" data-reactid=".1yoyqzyxt6o.1.0.1.0.0.0.0.2.1.0"><div class="guest-label" data-reactid=".1yoyqzyxt6o.1.0.1.0.0.0.0.2.1.0.0"><span class="guest-label__text guest-label__text-guests" data-reactid=".1yoyqzyxt6o.1.0.1.0.0.0.0.2.1.0.0.0"><span data-reactid=".1yoyqzyxt6o.1.0.1.0.0.0.0.2.1.0.0.0.0">1 huésped</span></span></div><div class="dropdown-icon" data-reactid=".1yoyqzyxt6o.1.0.1.0.0.0.0.2.1.0.1"><svg viewBox="0 0 18 18" style="fill:currentColor;height:12px;width:12px;display:block;"><path d="M16.291 4.295a1 1 0 1 1 1.414 1.415l-8 7.995a1 1 0 0 1-1.414 0l-8-7.995a1 1 0 1 1 1.414-1.415l7.293 7.29 7.293-7.29z" data-reactid=".1yoyqzyxt6o.1.0.1.0.0.0.0.2.1.0.1.0.0"></path></svg></div></button><div data-reactid=".1yoyqzyxt6o.1.0.1.0.0.0.0.2.1.1"><div class="GuestPicker hide pointer" data-reactid=".1yoyqzyxt6o.1.0.1.0.0.0.0.2.1.1.0"><div data-reactid=".1yoyqzyxt6o.1.0.1.0.0.0.0.2.1.1.0.0"><div class="GuestPickerRow row row-condensed" data-reactid=".1yoyqzyxt6o.1.0.1.0.0.0.0.2.1.1.0.0.0:$adults"><div class="col-sm-8 GuestPickerRow__label" data-reactid=".1yoyqzyxt6o.1.0.1.0.0.0.0.2.1.1.0.0.0:$adults.0"><strong aria-live="polite">1 adulto</strong></div><div class="col-sm-4 increment-btn-container" data-reactid=".1yoyqzyxt6o.1.0.1.0.0.0.0.2.1.1.0.0.0:$adults.1"><div class="increment-btn" data-reactid=".1yoyqzyxt6o.1.0.1.0.0.0.0.2.1.1.0.0.0:$adults.1.0"><button class="btn btn-decrement" disabled="" aria-label="Reducir el número de adultos" data-reactid=".1yoyqzyxt6o.1.0.1.0.0.0.0.2.1.1.0.0.0:$adults.1.0.0"><i class="icon icon-minus" data-reactid=".1yoyqzyxt6o.1.0.1.0.0.0.0.2.1.1.0.0.0:$adults.1.0.0.0"></i></button><button class="btn btn-increment" aria-label="Aumentar el número de adultos" data-reactid=".1yoyqzyxt6o.1.0.1.0.0.0.0.2.1.1.0.0.0:$adults.1.0.1"><i class="icon icon-add" data-reactid=".1yoyqzyxt6o.1.0.1.0.0.0.0.2.1.1.0.0.0:$adults.1.0.1.0"></i></button></div></div></div><div class="GuestPickerRow row row-condensed" data-reactid=".1yoyqzyxt6o.1.0.1.0.0.0.0.2.1.1.0.0.0:$children"><div class="col-sm-8 GuestPickerRow__label" data-reactid=".1yoyqzyxt6o.1.0.1.0.0.0.0.2.1.1.0.0.0:$children.0"><strong aria-live="polite" data-reactid=".1yoyqzyxt6o.1.0.1.0.0.0.0.2.1.1.0.0.0:$children.0.0">0 niños</strong><div class="pull-right text-muted text-small" data-reactid=".1yoyqzyxt6o.1.0.1.0.0.0.0.2.1.1.0.0.0:$children.0.1">De 2 a 12</div></div><div class="col-sm-4 increment-btn-container" data-reactid=".1yoyqzyxt6o.1.0.1.0.0.0.0.2.1.1.0.0.0:$children.1"><div class="increment-btn" data-reactid=".1yoyqzyxt6o.1.0.1.0.0.0.0.2.1.1.0.0.0:$children.1.0"><button class="btn btn-decrement" disabled="" aria-label="Reducir el número de niños" data-reactid=".1yoyqzyxt6o.1.0.1.0.0.0.0.2.1.1.0.0.0:$children.1.0.0"><i class="icon icon-minus" data-reactid=".1yoyqzyxt6o.1.0.1.0.0.0.0.2.1.1.0.0.0:$children.1.0.0.0"></i></button><button class="btn btn-increment" aria-label="Aumentar el número de niños" data-reactid=".1yoyqzyxt6o.1.0.1.0.0.0.0.2.1.1.0.0.0:$children.1.0.1"><i class="icon icon-add" data-reactid=".1yoyqzyxt6o.1.0.1.0.0.0.0.2.1.1.0.0.0:$children.1.0.1.0"></i></button></div></div></div><div class="GuestPickerRow row row-condensed" data-reactid=".1yoyqzyxt6o.1.0.1.0.0.0.0.2.1.1.0.0.0:$infants"><div class="col-sm-8 GuestPickerRow__label" data-reactid=".1yoyqzyxt6o.1.0.1.0.0.0.0.2.1.1.0.0.0:$infants.0"><strong aria-live="polite" data-reactid=".1yoyqzyxt6o.1.0.1.0.0.0.0.2.1.1.0.0.0:$infants.0.0">0 bebés</strong><div class="pull-right text-muted text-small" data-reactid=".1yoyqzyxt6o.1.0.1.0.0.0.0.2.1.1.0.0.0:$infants.0.1">Menos de 2</div></div><div class="col-sm-4 increment-btn-container" data-reactid=".1yoyqzyxt6o.1.0.1.0.0.0.0.2.1.1.0.0.0:$infants.1"><div class="increment-btn" data-reactid=".1yoyqzyxt6o.1.0.1.0.0.0.0.2.1.1.0.0.0:$infants.1.0"><button class="btn btn-decrement" disabled="" aria-label="Reducir el número de bebés" data-reactid=".1yoyqzyxt6o.1.0.1.0.0.0.0.2.1.1.0.0.0:$infants.1.0.0"><i class="icon icon-minus" data-reactid=".1yoyqzyxt6o.1.0.1.0.0.0.0.2.1.1.0.0.0:$infants.1.0.0.0"></i></button><button class="btn btn-increment" aria-label="Aumentar el número de bebés" data-reactid=".1yoyqzyxt6o.1.0.1.0.0.0.0.2.1.1.0.0.0:$infants.1.0.1"><i class="icon icon-add" data-reactid=".1yoyqzyxt6o.1.0.1.0.0.0.0.2.1.1.0.0.0:$infants.1.0.1.0"></i></button></div></div></div><div class="GuestPickerFooter text-muted text-small" data-reactid=".1yoyqzyxt6o.1.0.1.0.0.0.0.2.1.1.0.0.1"><div class="row row-condensed" data-reactid=".1yoyqzyxt6o.1.0.1.0.0.0.0.2.1.1.0.0.1.0"><div class="col-sm-9" data-reactid=".1yoyqzyxt6o.1.0.1.0.0.0.0.2.1.1.0.0.1.0.0"></div><div class="col-sm-3 text-right GuestPickerFooter__close" data-reactid=".1yoyqzyxt6o.1.0.1.0.0.0.0.2.1.1.0.0.1.0.1"><button class="btn-link" type="button" data-reactid=".1yoyqzyxt6o.1.0.1.0.0.0.0.2.1.1.0.0.1.0.1.0"><span data-reactid=".1yoyqzyxt6o.1.0.1.0.0.0.0.2.1.1.0.0.1.0.1.0.0">cerrar</span></button></div></div></div></div></div></div></div></div>
+                <div class="SearchForm__submit" data-reactid=".1yoyqzyxt6o.1.0.1.0.0.0.0.3"><button type="submit" class="btn btn-primary btn-large btn-block" data-reactid=".1yoyqzyxt6o.1.0.1.0.0.0.0.3.0"><div data-reactid=".1yoyqzyxt6o.1.0.1.0.0.0.0.3.0.0"><div class="hide-lg" data-reactid=".1yoyqzyxt6o.1.0.1.0.0.0.0.3.0.0.0"><svg viewBox="0 0 24 24" style="fill:currentColor;height:1em;width:1em;display:block;" data-reactid=".1yoyqzyxt6o.1.0.1.0.0.0.0.3.0.0.0.0"><path d="M23.53 22.47l-6.807-6.808A9.455 9.455 0 0 0 19 9.5 9.5 9.5 0 1 0 9.5 19c2.353 0 4.502-.86 6.162-2.277l6.808 6.807a.75.75 0 0 0 1.06-1.06zM9.5 17.5a8 8 0 1 1 0-16 8 8 0 0 1 0 16z" data-reactid=".1yoyqzyxt6o.1.0.1.0.0.0.0.3.0.0.0.0.0"></path></svg></div><span class="SearchForm__submit-text hide-md" data-reactid=".1yoyqzyxt6o.1.0.1.0.0.0.0.3.0.0.1"><span data-reactid=".1yoyqzyxt6o.1.0.1.0.0.0.0.3.0.0.1.0">Buscar</span></span></div></button></div>
+                  </div>
+                </div>
+              </form>
+          </div>
+          </div>
+    </div>
+  -->
+
+<div class="container">
+<div class="row">
+    <form class="col s12">
+      <div class="SearchForm row">
+        <div class="input-field col s4">
+          <input placeholder="Destino, ciudad, direccion " id="donde" type="text" class="validate">
+          <label for="donde">Donde</label>
+        </div>
+        <div class="input-field col s2">
+          <input placeholder="Llegada" type="date" class="datepicker">
+          <label for="cuando">Cuando</label>
+        </div>
+        <div class="input-field col s2">
+          <input placeholder="Salida" type="date" class="datepicker">
+        </div>
+   <div class="input-field col s4">
+    <select>
+      <option value="0">1 huésped</option>
+      <option value="1">2 huésped</option>
+      <option value="2">3 huésped</option>
+      <option value="3">4 huésped</option>
+    </select>
+    <label>Huéspedes</label>
+    <button class="btn" type="submit" name="action">Buscar</button>
+  </div>
+      </div>
+    </form>
+  </div>
+</div>
+<!-- PARTE QUE FALTA  -->
+
+  <!-- CORE JQUERY  -->
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <!-- MATERIALIZE CORE SCRIPT   -->
+  <script src="node_modules/materialize-css/dist/js/materialize.min.js"></script>  
+  <!-- CUSTOM SCRIPTS -->
+  <script type="text/javascript" src="dist/js/script.min.js"></script>
+</body>
+</html>
