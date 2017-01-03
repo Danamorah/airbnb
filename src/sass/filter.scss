@@ -1,0 +1,103 @@
+#filter .select-wrapper {
+    position: relative;
+    margin-top: -15px;
+}
+
+.tooltip{
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+}
+
+.tooltiptext{
+ 	@include info;
+}
+
+.filter-uno .material-icons{
+    margin: 10px;
+    color: $gris;
+}
+
+
+.filter-uno p{
+    margin-left: 26px;
+}
+
+[type="checkbox"]+label {
+    margin-top: 14px;
+}
+
+.filter-cuatro .material-icons{
+    color: $amarilloIcon;
+    font-size: $sizeIconos;
+}
+
+/*ESTILOS RANGE PRICE*/
+
+
+.flat-slider{
+	&ui-corner-all,
+}
+
+.flat-slider.ui-corner-all,
+.flat-slider .ui-corner-all {
+  border-radius: 0;
+}
+
+.flat-slider.ui-slider {
+  border: 0;
+  background: #e1dfdf;
+  border-radius: 7px;
+}
+
+.flat-slider.ui-slider-horizontal {
+  height: 6px;
+  margin-top: 26px;
+}
+
+.flat-slider.ui-slider-vertical {
+  height: 15em;
+  width: 6px;
+}
+
+.flat-slider .ui-slider-handle {
+  width: 20px;
+  height: 20px;
+  background: #b8bdbe;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  &hover{
+  	opacity: .8;
+  }
+}
+
+.flat-slider.ui-slider-horizontal{ 
+	&.ui-slider-handle {
+	  top: 50%;
+	  margin-top: -10px;
+	}
+}
+
+.flat-slider.ui-slider-vertical{
+	&.ui-slider-handle {
+	  left: 50%;
+	  margin-left: -10px;
+	}
+}
+
+.flat-slider .ui-slider-range {
+  border: 0;
+  border-radius: 7;
+  background: #76c3f1;
+}
+
+.flat-slider.ui-slider-horizontal .ui-slider-range {
+  top: 0;
+  height: 6px;
+}
+
+.flat-slider.ui-slider-vertical .ui-slider-range {
+  left: 0;
+  width: 6px;
+}
