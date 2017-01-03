@@ -4,4 +4,19 @@
 	border: $bs;
 }
 
+@mixin info {
+	display: none;
+    left: 28%;
+    top: 6%;
+    position: absolute;
+    z-index: 999;
+    background-color: #fff;
+    color: #000;
+    width: 15%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 12px;
+    padding: 5px;
+}
 
