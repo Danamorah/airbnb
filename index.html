@@ -10,11 +10,32 @@
   <![endif]-->
   <title>Airbnb</title>
   <link rel="stylesheet" type="text/css" href="node_modules/materialize-css/dist/css/materialize.min.css">
-  <!--REQUIRED STYLE SHEETS-->>
+  <!--REQUIRED STYLE SHEETS-->
   <link rel="stylesheet" type="text/css" href="dist/css/style.min.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
+
+  <!-- NAVBAR ABRIL -->
+  <header>
+    <div class="row">
+      <div class="col s12 navbar-fixed">
+        <nav>
+          <div class="nav-wrapper">
+            <a href="index.html" class="brand-logo"><img src="img/logo.png"></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+              <li><a href="#">Conviértete en anfitrión</a></li>
+              <li><a href="#">Ayuda</a></li>
+              <li><a href="#">Regístrate</a></li>
+              <li><a href="#">Iniciar sesión</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- FIN NAVBAR ABRIL -->
+
 <section class="primero">
 
   <div class="slider">
@@ -78,11 +99,85 @@
   </div>
   </div>
   </section>
+
+  <!-- FOTER ABRIL -->
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="input-field col m2">
+          <select name="name" class="browser-default">
+            <option value="" disabled selected>Español</option>
+            <option value="1">Deutsch</option>
+            <option value="1">English</option>
+            <option value="2">Francais</option>
+            <option value="1">Italiano</option>
+            <option value="3">Potuguês</option>
+          </select>
+          <label></label>
+        </div>
+        <div class="input-field col m2">  
+          <select name="name" class="browser-default">
+            <option value="" disabled selected>CLP</option>
+            <option value="1">DKK</option>
+            <option value="1">EUR</option>
+            <option value="2">MAD</option>
+            <option value="1">SAR</option>
+            <option value="3">USD</option>
+          </select>
+          <label></label>
+        </div>
+        <div class="col m2">
+          <h5>Airbnb</h5>
+            <ul>
+              <li><a class="text-lighten-3" href="#!">Acerca de</a></li>
+              <li><a class="text-lighten-3" href="#!">Empleo</a></li>
+              <li><a class="text-lighten-3" href="#!">Prensa</a></li>
+              <li><a class="text-lighten-3" href="#!">Políticas</a></li>
+              <li><a class="text-lighten-3" href="#!">Ayuda</a></li>
+              <li><a class="text-lighten-3" href="#!">Diversidad y sentido de pertenencia</a></li>
+            </ul>
+        </div>
+        <div class="col m2">
+          <h5>Descubre Airbnb</h5>
+            <ul>
+              <li><a class="text-lighten-3" href="#!">Confianza y seguridad</a></li>
+              <li><a class="text-lighten-3" href="#!">Crédito para viajar</a></li>
+              <li><a class="text-lighten-3" href="#!">Cheques regalo</a></li>
+              <li><a class="text-lighten-3" href="#!">Airbnb citizen</a></li>
+              <li><a class="text-lighten-3" href="#!">Viajes de negocios</a></li>
+              <li><a class="text-lighten-3" href="#!">Guías</a></li>
+            </ul>
+        </div>
+        <div class="col m2">
+          <h5>Hospedar</h5>
+            <ul>
+              <li><a class="text-lighten-3" href="#!">Razones para hospedar</a></li>
+              <li><a class="text-lighten-3" href="#!">Hospitalidad</a></li>
+              <li><a class="text-lighten-3" href="#!">Ser un anfitrión responsable</a></li>
+            </ul>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="divider"></div>
+      <div class="container copyright">
+        © Airbnb, Inc.
+        <a class="text-lighten-4 right copyright" href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        <a class="text-lighten-4 right copyright" href="https://twitter.com/airbnb_latam"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        <a class="text-lighten-4 right copyright" href="https://www.facebook.com/AirbnbLatam"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        <a class="text-lighten-4 right copyright" href="#!">Mapa del sitio</a> <a class="text-lighten-4 right copyright" href="#!">Términos y Privacidad</a>
+      </div>
+    </div>
+  </footer>
+  <!-- FIN FOOTER ABRIL -->
+
+  <script src="https://use.fontawesome.com/e04595ffc3.js"></script>
   <!-- CORE JQUERY  -->
   <script src="node_modules/jquery/dist/jquery.min.js"></script>
   <!-- MATERIALIZE CORE SCRIPT   -->
   <script src="node_modules/materialize-css/dist/js/materialize.min.js"></script>  
   <!-- CUSTOM SCRIPTS -->
   <script type="text/javascript" src="dist/js/script.min.js"></script>
+  <script type="text/javascript" src="src/js/search.js"></script>
 </body>
 </html>
