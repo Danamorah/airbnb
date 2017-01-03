@@ -1,8 +1,16 @@
+//Funcion para iniciar el mapa
 function initMap() {
   var map = new google.maps.Map(document.getElementById('map'), {
     center: {lat: -34.397, lng: 150.644},
     zoom: 4
   });
+  var image = 'images/beachflag.png';
+  var beachMarker = new google.maps.Marker({
+    position: {lat: -33.890, lng: 151.274},
+    map: map,
+    icon: image
+  });
+
   var infoWindow = new google.maps.InfoWindow({map: map});
 
   // condicional para la Geolocalización
