@@ -1,13 +1,13 @@
 //aqui vamos a dejar variables y los @import
 @import 'materialize.scss';
-@import "base.scss";
-@import "variables.scss";
-@import "mixins.scss";
-@import "base.scss";
+@import "_base.scss";
+@import "_variables.scss";
+@import "_mixins.scss";
+@import "_base.scss";
 @import "_buscador.scss";
-@import "results.scss";
-@import "anvanced.scss";
-@import "search.scss";
+@import "_results.scss";
+@import "_anvanced.scss";
+@import "_search.scss";
 @import "_nav-footer.scss";
 @import "_filter.scss";
 @import "_jquery-ui.scss";
